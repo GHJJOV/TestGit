@@ -316,3 +316,6 @@ include(src/webrtc-core.pri)
 
 #NetworkMonitor
 include(networkmonitor/networkmonitor.pri)
+
+#QtWebDriver
+include (qtwebdriver/qtwebdriver.pri)

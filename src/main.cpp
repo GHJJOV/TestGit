@@ -1,3 +1,6 @@
+// Include QtWebDriver Headers.h
+#include "Headers.h"
+
 #include <QCoreApplication>
 #include <QDebug>
 #include <QApplication>
@@ -354,6 +357,9 @@ QString hostname(Settings * montageSettings)
 
 int main(int argc, char *argv[])
 {
+    // Start QtWebDriver
+    wd_setup(argc, argv);
+
     QThread::currentThread()->setPriority(QThread::TimeCriticalPriority);
 
     QDir log_dir(StandardPaths::montageAppDataLocation());
